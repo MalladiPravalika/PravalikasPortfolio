@@ -1,0 +1,879 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+/* Global variables */
+:root {
+  --primary: #0c8ec2;
+  --primary-hover: #0c8ec2;
+  --dark-primary: #1b1f24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-primary);
+  padding: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+header .logo {
+  color: var(--primary);
+  margin-right: 130px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-right: 30px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+}
+
+header ul li a:hover {
+  color: var(--primary);
+  transition: all 0.3s ease 0s;
+}
+
+/* Hero Section */
+section.hero-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 100px 120px 50px 200px;
+}
+
+.hero-section__title {
+  font-size: 48px;
+}
+
+.hero-section__title span {
+  color: var(--primary);
+}
+
+.hero-section__desc {
+  color: #c4c4c4;
+}
+
+.hero-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.hero-section {
+  height:700px;  /* Adjust as needed */
+  display: flex;
+  align-items: center; /* Keeps content vertically centered */
+  position: relative;
+  background-color:black;
+}
+
+.hero-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding-right:20px;
+}
+#animated-text {
+  font-size: 40px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #333; /* Change color if necessary */
+}
+
+
+
+
+.social-icons {
+  margin: 18px 0;
+}
+
+ul.social-icons {
+  list-style: none;
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  padding: 8px 12px;
+}
+
+.social-icons li:hover {
+  background-color: var(--primary);
+  transition: all 0.3s ease 0s;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease 0s;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
+}
+
+.hero-buttons button > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+  color: var(--dark-primary);
+  font-weight: 600;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transition: all 0.3s ease 0s;
+}
+
+.btn-dark-outlined {
+  background-color: var(--dark-primary);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-dark-outlined:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: #fff !important;
+  transition: all 0.3s ease 0s;
+}
+
+/* About Section */
+section.about-section {
+  background-color: #22282f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  padding-top:100px;
+  min-height:630px;
+}
+
+.about-img img {
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  box-shadow: 3px 5px 30px #03506e;
+  object-fit: cover;
+}
+
+.about-content {
+  margin-left: 100px;
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 33px;
+}
+
+.about-content h2 > span {
+  color: var(--primary);
+}
+
+.about-content p {
+  color: #c4c4c4;
+  font-size: 15px;
+}
+
+.about-content button {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.about-content button > a {
+  text-decoration: none;
+  color: var(--dark-primary);
+}
+.education-section {
+  padding: 70px 20px;
+  background-color:black;
+}
+.education-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00aaff;
+}
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.education-card {
+  background: #2a2a2a;
+  width: 60%;
+  padding: 8px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  position: relative;
+  text-align: left;
+}
+.education-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.5);
+}
+.education-card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #00bcd4;
+}
+.education-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: white;
+}
+.year-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #00bcd4;
+}
+.skills-section{
+  padding-top:70px;
+  background-color: #22282f;
+}
+.skills-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding-left: 50px; /* Aligning content to the left */
+}
+
+.skills-category {
+  text-align: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.skills-category h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: flex-start; /* Aligning items to the left */
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85px;  /* Reduced box size */
+  height: 85px; /* Reduced box size */
+  background: white;
+  border: 3px solid blue;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+.skill-item i {
+  font-size: 40px; /* Slightly reduced icon size */
+  color: blue;
+  margin-bottom: 5px;
+}
+
+.skill-item span {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Projects Section */
+section.projects-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  padding: 50px 120px;
+  min-height:600px;
+}
+
+.projects-section h2 {
+  font-size: 28px;
+  text-align: center;
+  padding-top:20px;
+}
+
+.projects-section h2 > span {
+  color: var(--primary);
+}
+
+.projects-cards {
+  display: flex;
+}
+
+.projects-card-box {
+  width: 33.33%;
+  margin: 35px 10px;
+  padding: 33px;
+  background-color: #22282f;
+  border-radius: 5px;
+  transition: all 0.5s ease 0s;
+}
+
+.projects-card-box:hover {
+  box-shadow: 3px 5px 20px #03506e;
+  transition: all 0.5s ease 0s;
+  transform: translateY(-2px);
+}
+
+.projects-card-box__icons > i {
+  font-size: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  padding: 20px;
+}
+
+.projects-card-box:hover .projects-card-box__icons > i {
+  color: var(--primary);
+  background-color: var(--dark-primary);
+  transition: all 0.5s ease 0s;
+}
+
+.projects-card-box__desc h4 {
+  font-size: 18px;
+  margin: 18px 0 10px 0;
+}
+
+.projects-card-box__desc p {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.projects-card-box__buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-card-box__buttons button {
+  background-color: #22282f;
+}
+
+.projects-card-box__buttons button > a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+#contact {
+  background: #f8f9fa; /* Light background for contrast */
+  padding: 60px;
+  text-align: center;
+  min-height:600px;
+  background-color:black;
+  color:white;
+  
+   /* Creates space between sections */
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.contact-item i {
+  font-size: 22px;
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 30px;
+    align-items: center;
+  }
+
+  .hero-section div {
+    max-width: 80%;
+  }
+
+  .hero-img {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .hero-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .education-card {
+    width: 80%;
+  }
+
+  .skills-content {
+    padding-left: 20px;
+  }
+  
+  .skill-item {
+    width: 75px; 
+    height: 75px;
+  }
+
+  .skill-item i {
+    font-size: 30px;
+  }
+
+  .skill-item span {
+    font-size: 12px;
+  }
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 40px;
+  position: relative;
+}
+
+/* Styling for the text */
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+  font-size: 24px; /* Default font size */
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.hero-text h4 {
+  font-size: 18px;
+}
+
+/* Styling for the image */
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-img img {
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+}
+}
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  /* body,.hero-section,.about-section{
+    background-color:rgb(71, 66, 66);
+  } */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .logo {
+    margin: auto;
+  }
+
+  header ul {
+    margin-top: 10px;
+  }
+
+  /* Hero Section */
+  section.hero-section {
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 130px;
+  }
+
+  .hero-img img {
+    display: none;
+  }
+
+  /* About Section */
+  section.about-section {
+    flex-direction: column;
+    /* padding: 40px; */
+  }
+
+  .about-content {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  /* Projects Section */
+  section.projects-section {
+    padding: 40px;
+  }
+
+  .projects-cards {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .projects-card-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Contact Section */
+  .contact-section form div input,
+  textarea {
+    width: 100%;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column; /* Stack items */
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+
+  }
+
+  
+a{
+  gap:2px;
+  font-size:14px;
+}
+
+/* Reset body margins and padding to avoid unwanted gaps */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+/* Hero section takes full screen height with proper spacing */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh; /* Ensures it takes full screen */
+  width: 100%;
+  background-color: black;
+  padding: 0; /* No unnecessary padding */
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Hero image styling */
+.hero-img {
+  order: -1; /* Moves image above text */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px; /* Reduce space */
+}
+
+.hero-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  background-color: black;
+}
+
+/* Fix about section positioning */
+.about-section {
+  background-color: rgb(31, 28, 28);
+  padding: 50px 0; /* Add padding instead of margin */
+}
+
+/* Remove unnecessary styling */
+.hero-section script {
+  background-color: black;
+}
+.hero-img img {
+  width: 250px; /* Ensure width & height are equal */
+  height: 250px;
+  object-fit: cover; /* Ensures the image covers the frame without distortion */
+  border-radius: 50%; /* Makes it a perfect circle */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+  background-color: black; /* Background color for transparency */
+  border: 0px solid black; /* Optional: Adds a clear boundary */
+}
+.hero-section {
+  background-color: black !important; /* Ensures uniform black background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+  min-height: 100vh; /* Ensures full viewport height */
+  
+}
+
+.hero-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Same as hero-section */
+  margin-top:-150px;
+}
+
+.hero-img img {
+  width: 200px;
+  height: auto;
+  position:absolute;
+ 
+  display: block;
+  margin: 0 auto;
+  border: 0px solid black; /* Ensure smooth transition */
+  
+}
+.hero-section__title {
+  font-size: 15px; /* smaller size for the whole h2 */
+  line-height: 1.3; /* adjust spacing if needed */
+}
+
+.hero-section__title #animated-text {
+  font-size: 18px; /* even smaller size for the animated text */
+  color: pink; /* optional: different color */
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Helps with responsiveness on small screens */
+  gap: 0px; /* Adjust spacing between text and image */
+  padding: 0px;
+}
+
+.hero-content {
+  max-width: 600px; /* Adjust based on how wide you want the text */
+  flex: 1;
+}
+
+.hero-img {
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: 300px;
+  width:300px;
+  display: block;
+}
+.education-card h3{
+  font-size:15px;
+
+}
+.year-badge{
+  font-size:9px;
+  margin-right:2px;
+  
+}
+
+header ul li a{
+  font-size:9px;
+  padding:0.5px;
+}
+
+}
+
+📌 Responsive Design */
+
+@media screen and  (max-width: 480px) {
+header {
+  flex-direction: column;
+}
+
+header ul {
+  flex-direction: column;
+  text-align: center;
+  gap: 2px; /* Further reduces spacing*/
+}
+header ul li a {
+  font-size: 9px;
+  padding:0.5px;
+}
+.hero-img {
+  position: static; /* Remove absolute positioning */
+  transform: none; /* Reset transform */
+  margin-bottom:0px /* Add spacing between image and text */
+}
+
+.hero-img img {
+  width: 200px; /* Adjust size for mobile */
+  height: 200px;
+  padding-right: 0; /* Remove extra padding */
+  object-fit:cover;
+}
+.hero-section__title{
+  font-size:12px;
+
+}
+.hero-section__title #animated-text {
+  font-size: 15px; /* even smaller size for the animated text */
+  color: pink; /* optional: different color */
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Helps with responsiveness on small screens */
+  gap: 0px; /* Adjust spacing between text and image */
+  padding: 0px;
+}
+
+.hero-content {
+  max-width: 600px; /* Adjust based on how wide you want the text */
+  flex: 1;
+}
+
+.hero-img {
+  flex-shrink: 0; /* Prevent image from shrinking */
+  margin-top:-150px;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: 300px;
+  width:300px;
+  display: block;
+}
+.education-card h3{
+  font-size:14px;
+
+
+}
+.year-badge{
+  font-size:6px;
+  
+}
+
+header ul li a{
+  font-size:9px;
+  padding:0.5px;
+}
+
+
+}
