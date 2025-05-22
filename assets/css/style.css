@@ -863,6 +863,29 @@ header ul li a{
   font-size:9px;
   padding:0.5px;
 }
+.education-card {
+    font-size: 0.9rem; /* ~14.4px, readable and compact */
+    padding: 12px;
+  }
+
+  .education-card h3 {
+    font-size: 1rem; /* Ensure headings are also responsive */
+    flex-direction: column; /* Stack icon and text vertically if needed */
+  }
+
+  .year-badge {
+    float: none;
+    display: block;
+    margin: 10px 0;
+    font-size: 0.85rem; /* Slightly smaller badge text */
+    text-align: left;
+  }
+
+  .education-container {
+    padding: 10px;
+  }
+
+
 
 
 }
