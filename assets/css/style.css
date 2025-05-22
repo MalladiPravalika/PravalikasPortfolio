@@ -755,7 +755,7 @@ body, html {
 
 .hero-section__title #animated-text {
   font-size: 18px; /* even smaller size for the animated text */
-  color:pink;/* optional: different color */
+  color:#00aaff;/* optional: different color */
 }
 .hero-section {
   display: flex;
@@ -833,7 +833,7 @@ header ul li a {
 }
 .hero-section__title #animated-text {
   font-size: 15px; /* even smaller size for the animated text */
-  color:pink;/* optional: different color */
+  color:#00aaff/* optional: different color */
 }
 .hero-section {
   display: flex;
@@ -863,16 +863,45 @@ header ul li a{
   font-size:9px;
   padding:0.5px;
 }
-.year-badge {
+.education-card {
+    position: relative;
+    padding-top: 2.5rem; /* give space for badge on top if needed */
+  }
+
+  .year-badge {
     display: block;
-    margin-bottom: 0.4rem;
-    font-size: 0.9rem;
+    position: static;
+    margin-top: 0.5rem;
+    width: fit-content;
+    font-size: 0.85rem;
   }
 
   .education-card h3 {
     display: block;
     font-size: 1rem;
-    line-height: 1.3;
-    margin-top: 0;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+}
+@media (max-width: 600px) {
+  .education-card {
+    position: relative;
+    padding-top: 2.5rem; /* give space for badge on top if needed */
+  }
+
+  .year-badge {
+    display: block;
+    position: static;
+    margin-top: 0.5rem;
+    width: 100%; /* full width so it doesn't overlap */
+    font-size: 0.95rem;
+  }
+
+  .education-card h3 {
+    display: block;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+    margin-top: 0.2rem;
   }
 }
