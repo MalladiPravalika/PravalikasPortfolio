@@ -783,11 +783,11 @@ body, html {
 }
 
 .education-card h3{
-  font-size:15px;
+  font-size:13px;
 
 }
 .year-badge{
-  font-size:12px;
+  font-size:10px;
   margin-right:2px;
   
 }
@@ -852,6 +852,16 @@ header ul li a {
 .hero-img {
   flex-shrink: 0; /* Prevent image from shrinking */
   margin-top:-150px;
+}
+education-card h3{
+  font-size:10px;
+  width:90%
+
+}
+.year-badge{
+  font-size:6px;
+  
+  
 }
 
 .hero-img img {
