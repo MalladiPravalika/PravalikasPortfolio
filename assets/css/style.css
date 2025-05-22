@@ -755,7 +755,7 @@ body, html {
 
 .hero-section__title #animated-text {
   font-size: 18px; /* even smaller size for the animated text */
-  color:#00aaff;/* optional: different color */
+  color:pink;/* optional: different color */
 }
 .hero-section {
   display: flex;
@@ -833,7 +833,7 @@ header ul li a {
 }
 .hero-section__title #animated-text {
   font-size: 15px; /* even smaller size for the animated text */
-  color:#00aaff;/* optional: different color */
+  color:pink;/* optional: different color */
 }
 .hero-section {
   display: flex;
@@ -863,21 +863,16 @@ header ul li a{
   font-size:9px;
   padding:0.5px;
 }
-.education-card {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .year-badge {
-    order: -1; /* Show first */
+.year-badge {
     display: block;
-    margin-bottom: 0.5rem;
-    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
   }
 
   .education-card h3 {
-    order: 0; /* Show after year */
+    display: block;
     font-size: 1rem;
-    margin-bottom: 0.3rem;
+    line-height: 1.3;
+    margin-top: 0;
   }
 }
