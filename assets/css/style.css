@@ -755,7 +755,7 @@ body, html {
 
 .hero-section__title #animated-text {
   font-size: 18px; /* even smaller size for the animated text */
-  color:#00aaff /* optional: different color */
+  color:pink;/* optional: different color */
 }
 .hero-section {
   display: flex;
