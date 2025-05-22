@@ -834,7 +834,7 @@ header ul li a {
 }
 .hero-section__title #animated-text {
   font-size: 15px; /* even smaller size for the animated text */
-  color: #00aaff /* optional: different color */
+  color: pink /* optional: different color */
 }
 .hero-section {
   display: flex;
@@ -862,13 +862,13 @@ header ul li a {
   display: block;
 }
 .education-card h3{
-  font-size:12px;
+  font-size:15px;
 }
 
 
 }
 .year-badge{
-  font-size:6px;
+  font-size:8px;
   
 }
 
