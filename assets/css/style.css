@@ -755,7 +755,7 @@ body, html {
 
 .hero-section__title #animated-text {
   font-size: 18px; /* even smaller size for the animated text */
-  color:pink;/* optional: different color */
+  color:#00aaff/* optional: different color */
 }
 .hero-section {
   display: flex;
@@ -833,7 +833,7 @@ header ul li a {
 }
 .hero-section__title #animated-text {
   font-size: 15px; /* even smaller size for the animated text */
-  color:pink; /* optional: different color */
+  color:#00aaff; /* optional: different color */
 }
 .hero-section {
   display: flex;
@@ -862,5 +862,9 @@ header ul li a {
 header ul li a{
   font-size:9px;
   padding:0.5px;
+}
+.education-card h3{
+  font-size:3px;
+
 }
 }
