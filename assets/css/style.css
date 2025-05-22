@@ -853,13 +853,13 @@ header ul li a {
   flex-shrink: 0; /* Prevent image from shrinking */
   margin-top:-150px;
 }
-education-card h3{
+.education-card h3{
   font-size:8px;
   width:90%
 
 }
 .year-badge{
-  font-size:4px;
+  font-size:3px;
   
   
 }
