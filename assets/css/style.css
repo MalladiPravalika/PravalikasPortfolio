@@ -756,7 +756,7 @@ body, html {
 
 .hero-section__title #animated-text {
   font-size: 18px; /* even smaller size for the animated text */
-  color:#00aaff /* optional: different color */
+  color:pink /* optional: different color */
 }
 .hero-section {
   display: flex;
@@ -788,7 +788,7 @@ body, html {
 
 }
 .year-badge{
-  font-size:9px;
+  font-size:12px;
   margin-right:2px;
   
 }
