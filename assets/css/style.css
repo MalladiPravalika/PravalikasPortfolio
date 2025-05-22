@@ -864,29 +864,24 @@ header ul li a{
   padding:0.5px;
 }
 .education-card {
-  position: relative;
-  padding-top: 2.5rem;
-  font-size: 0.85rem;
-}
+    position: relative;
+    padding-top: 2.5rem; /* give space for badge on top if needed */
+  }
 
-/* Wrap h3 and year-badge in a flex container */
-.education-card h3 {
-  display: inline; /* allow inline flow */
-  font-size: 1rem;
-  line-height: 1.4;
-  margin: 0;
-  margin-right: 0.5rem;
-  white-space: normal;
-  vertical-align: middle;
-}
+  .year-badge {
+    display: block;
+    position: static;
+     margin-top: 0.5rem;
+    width: fit-content;
+    font-size: 0.85rem;
+  }
 
-.year-badge {
-  display: inline;
-  font-size: 0.85rem;
-  color: gray;
-  white-space: nowrap;
-  vertical-align: middle;
-}
+  .education-card h3 {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
 
 
 }
